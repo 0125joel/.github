@@ -2,7 +2,7 @@
 
 I'm Joël, a Microsoft 365 security consultant who helps organisations build secure, modern workplaces without slowing people down.
 
-## 🚀 What I'm working on
+## 🚀 Focus areas
 - Building Zero Trust solutions that *actually* work in the real world, pros, cons, and lessons learned
 - Exploring the balance between usability and security, because blocking everything isn’t strategy 😉
 - Moderator on the Microsoft EMS Discord
