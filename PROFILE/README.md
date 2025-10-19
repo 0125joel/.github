@@ -1,6 +1,6 @@
 # 👋 Hey there!
 
-I'm Joël, a Microsoft 365 security consultant who helps organisations build secure, modern workplaces without slowing people down.
+I'm Joël, a **Microsoft 365 security consultant** who helps organisations build secure, modern workplaces without slowing people down.
 
 ## 🚀 Focus areas
 - Building Zero Trust solutions that *actually* work in the real world, pros, cons, and lessons learned
