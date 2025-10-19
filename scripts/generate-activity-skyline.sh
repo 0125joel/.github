@@ -12,7 +12,7 @@ if [[ -z "$OWNER" ]]; then
   exit 1
 fi
 
-README_PATH="profile/README.md"
+README_PATH=".github/profile/README.md"
 if [[ ! -f "$README_PATH" ]]; then
   echo "README not found at $README_PATH" >&2
   exit 1
