@@ -11,13 +11,3 @@ I'm Joël, a **Microsoft 365 security consultant** who helps organisations build
 
 ## 🧩 What drives me
 Helping teams get clarity, stay secure, and move fast, without vendor noise or buzzwords.
-
-## 📊 Monthly OSS Activity Skyline
-
-<!-- skyline:start -->
-
-No data yet.
-
-<!-- skyline:end -->
-
-📎 Legend: ▇ = 2 actions
