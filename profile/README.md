@@ -11,3 +11,5 @@ I'm Joël, a **Microsoft 365 security consultant** who helps organisations build
 
 ## 🧩 What drives me
 Helping teams get clarity, stay secure, and move fast, without vendor noise or buzzwords.
+
+Let’s connect if you care about Microsoft 365 security, real-life automation, and learning together!
