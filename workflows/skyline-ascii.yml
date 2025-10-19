@@ -1,0 +1,57 @@
+# .github/workflows/skyline-monthly.yml
+# GitHub Action: Genereert maandelijkse ASCII skyline (commits per maand als ASCII bars)
+
+name: Monthly ASCII GitHub Skyline
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # Elke maand op de 1e dag om 06:00 UTC (08:00 NL tijd)
+  workflow_dispatch:       # Handmatig starten blijft ook mogelijk
+
+
+permissions:
+  contents: write
+
+jobs:
+  ascii-monthly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Get commit stats via GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p assets
+          echo "# Monthly GitHub Skyline for 0125joel" > assets/skyline-monthly.txt
+          echo "Generated: $(date '+%Y-%m-%d')" >> assets/skyline-monthly.txt
+          echo "" >> assets/skyline-monthly.txt
+
+          # Genereer stats per maand voor huidige jaar
+          YEAR=$(date +%Y)
+          for MONTH in {01..12}; do
+            START="$YEAR-$MONTH-01"
+            END=$(date -d "$START +1 month" +%Y-%m-%d)
+            COUNT=$(gh api \
+              -H "Accept: application/vnd.github+json" \
+              "/search/commits?q=author:0125joel+committer-date:$START..$END" \
+              --jq ".total_count")
+
+            # Maak ASCII bar
+            BARS=$(printf '▇%.0s' $(seq 1 $((COUNT / 5 + 1))))
+            echo "📅 $YEAR-$MONTH" >> assets/skyline-monthly.txt
+            echo "$BARS $COUNT commits" >> assets/skyline-monthly.txt
+            echo "" >> assets/skyline-monthly.txt
+          done
+
+      - name: Commit monthly skyline txt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add assets/skyline-monthly.txt
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: update monthly ASCII skyline"
+            git push
