@@ -20,6 +20,7 @@
 - **Microsoft Intune**: devices that are compliant without anyone noticing they are
 - **Microsoft Defender**: catching the stuff Conditional Access didn't block
 - **PowerShell & Microsoft Graph**: if I do it twice by hand, it becomes a script
+- **Azure Logic Apps**: for whatever native Microsoft 365 just can't do on its own
 
 <div align="center">
 
@@ -27,7 +28,8 @@
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/entra-id.svg" width="42" height="42" alt="Microsoft Entra ID" title="Microsoft Entra ID" />&nbsp;&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/microsoft-intune.svg" width="42" height="42" alt="Microsoft Intune" title="Microsoft Intune" />&nbsp;&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/microsoft-defender.svg" width="42" height="42" alt="Microsoft Defender" title="Microsoft Defender" />&nbsp;&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/powershell.svg" width="42" height="42" alt="PowerShell" title="PowerShell" />
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/powershell.svg" width="42" height="42" alt="PowerShell" title="PowerShell" />&nbsp;&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/azure.svg" width="42" height="42" alt="Azure" title="Azure" />
 </p>
 
 </div>
