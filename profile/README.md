@@ -38,9 +38,12 @@
 
 - Building Zero Trust solutions that *actually* work in the real world: pros, cons, and lessons learned
 - Exploring the balance between usability and security, because blocking everything isn't strategy 😉
-- Moderator on the Microsoft EMS Discord
+- Moderator on the Microsoft EMS Discord, co-organizer of the [Microsoft EMS Community Summit](https://www.msems.community/)
 
+<p>
+<a href="https://www.msems.community/"><img src="https://www.msems.community/logo.png" width="36" height="36" alt="Microsoft EMS Community" title="Microsoft EMS Community" /></a>&nbsp;&nbsp;
 <a href="https://discord.gg/your-invite"><img src="https://img.shields.io/badge/JOIN%20US%20ON-DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join us on Discord" /></a>
+</p>
 
 ## 🛠️ What I build
 
@@ -50,7 +53,7 @@ Most of what I write about ends up running somewhere: a script, a module, a Logi
 Open source dashboard for visualizing and managing Entra ID PIM assignments. Self-hosted by other organisations too, which still surprises me every time someone mentions it.
 
 **[PIM Monitor](https://pimmonitor.com)**
-My own reference for classifying Entra roles across control plane, management plane, and data plane. Built because I was tired of guessing which role belonged where, and so was everyone I asked.
+My own interpretation of Enterprise Access Management model classifying Entra roles across control plane, management plane, and data plane. Built because I was tired of guessing which role belonged where, and so was everyone I asked.
 
 **[IntuneLaps](https://github.com/0125joel/IntuneLaps)**
 PowerShell module that pulls the Intune LAPS username and password straight from the tenant. Small, does one thing, does it fast.
