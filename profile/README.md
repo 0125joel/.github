@@ -55,6 +55,9 @@ Open source dashboard for visualizing and managing Entra ID PIM assignments. Sel
 **[PIM Monitor](https://pimmonitor.com)**
 My own interpretation of Enterprise Access Management model classifying Entra roles across control plane, management plane, and data plane. Built because I was tired of guessing which role belonged where, and so was everyone I asked.
 
+**[IntoTheCloud](https://github.com/0125joel/IntoTheCloud)**
+Where the tools and scripts from actual client work land once they're clean enough to share. First up: a Logic App that tags PIM-eligible admins so Conditional Access can pull them out of standard end-user SSPR, because eligible isn't the same as harmless.
+
 **[IntuneLaps](https://github.com/0125joel/IntuneLaps)**
 PowerShell module that pulls the Intune LAPS username and password straight from the tenant. Small, does one thing, does it fast.
 
